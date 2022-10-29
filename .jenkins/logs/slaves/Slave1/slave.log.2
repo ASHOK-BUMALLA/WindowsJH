@@ -1,0 +1,57 @@
+SSHLauncher{host='3.72.106.118', port=22, credentialsId='testing', jvmOptions='', javaPath='', prefixStartSlaveCmd='', suffixStartSlaveCmd='', launchTimeoutSeconds=60, maxNumRetries=10, retryWaitTime=15, sshHostKeyVerificationStrategy=hudson.plugins.sshslaves.verifiers.NonVerifyingKeyVerificationStrategy, tcpNoDelay=true, trackCredentials=true}
+[10/29/22 18:33:36] [SSH] Opening SSH connection to 3.72.106.118:22.
+[10/29/22 18:33:37] [SSH] WARNING: SSH Host Keys are not being verified. Man-in-the-middle attacks may be possible against this connection.
+[10/29/22 18:33:37] [SSH] Authentication successful.
+[10/29/22 18:33:38] [SSH] The remote user's environment is:
+BASH=/usr/bin/bash
+BASHOPTS=checkwinsize:cmdhist:complete_fullquote:extquote:force_fignore:globasciiranges:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=([0]="0")
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_EXECUTION_STRING=set
+BASH_LINENO=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="5" [1]="1" [2]="16" [3]="1" [4]="release" [5]="x86_64-pc-linux-gnu")
+BASH_VERSION='5.1.16(1)-release'
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+DIRSTACK=()
+EUID=1000
+GROUPS=()
+HOME=/home/ubuntu
+HOSTNAME=ip-172-31-43-115
+HOSTTYPE=x86_64
+IFS=$' \t\n'
+LANG=C.UTF-8
+LOGNAME=ubuntu
+MACHTYPE=x86_64-pc-linux-gnu
+MOTD_SHOWN=pam
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PIPESTATUS=([0]="0")
+PPID=1491
+PS4='+ '
+PWD=/home/ubuntu
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments
+SHLVL=1
+SSH_CLIENT='49.37.134.104 59122 22'
+SSH_CONNECTION='49.37.134.104 59122 172.31.43.115 22'
+TERM=dumb
+UID=1000
+USER=ubuntu
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_SESSION_CLASS=user
+XDG_SESSION_ID=5
+XDG_SESSION_TYPE=tty
+_=']'
+Checking Java version in the PATH
+bash: line 1: java: command not found
+Java is not in the PATH nor configured with the javaPath setting, Jenkins will try to guess where is Java, this guess will be removed in the future. :Launch agents via SSH
+[10/29/22 18:33:39] [SSH] Checking java version of /home/ubuntu/slave1/jdk/bin/java
+Couldn't figure out the Java version of /home/ubuntu/slave1/jdk/bin/java
+bash: line 1: /home/ubuntu/slave1/jdk/bin/java: No such file or directory
+
+[10/29/22 18:33:39] [SSH] Checking java version of java

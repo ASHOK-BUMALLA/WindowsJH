@@ -1,0 +1,47 @@
+Started by user [8mha:////4Krv1OzsJrYgYZhatHyo5ydAgD9BzgpA1+S6XoZtAh6qAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xOKM/GwAS1+pwMAAAAA=[0mAshok
+Running as SYSTEM
+Building on the built-in node in workspace C:\ProgramData\Jenkins\.jenkins\workspace\SNP31
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/ASHOK-BUMALLA/AWSCF_JenkinS.git
+ > git.exe init C:\ProgramData\Jenkins\.jenkins\workspace\SNP31 # timeout=10
+ERROR: Error cloning remote repo 'origin'
+hudson.plugins.git.GitException: Could not init C:\ProgramData\Jenkins\.jenkins\workspace\SNP31
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$5.execute(CliGitAPIImpl.java:1049)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$2.execute(CliGitAPIImpl.java:802)
+	at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:1229)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1312)
+	at hudson.scm.SCM.checkout(SCM.java:540)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1239)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:647)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:85)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:519)
+	at hudson.model.Run.execute(Run.java:1899)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:107)
+	at hudson.model.Executor.run(Executor.java:449)
+Caused by: hudson.plugins.git.GitException: Error performing git command: git.exe init C:\ProgramData\Jenkins\.jenkins\workspace\SNP31
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2709)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2627)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2623)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommand(CliGitAPIImpl.java:1981)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$5.execute(CliGitAPIImpl.java:1047)
+	... 12 more
+Caused by: java.io.IOException: Cannot run program "git.exe" (in directory "C:\ProgramData\Jenkins\.jenkins\workspace\SNP31"): CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at hudson.Proc$LocalProc.<init>(Proc.java:254)
+	at hudson.Proc$LocalProc.<init>(Proc.java:223)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:997)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:509)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2690)
+	... 16 more
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:494)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	... 22 more
+ERROR: Error cloning remote repo 'origin'
+Finished: FAILURE

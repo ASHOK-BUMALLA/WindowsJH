@@ -1,0 +1,14 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2022-10-28 14:09:15.654 UTC</timestamp>
+  <md5sum>b94f5994e5b264bb1b643861dbf0f628</md5sum>
+  <fileName>Credential id=Win_AWS name=ubuntu (testing agent connection b/w pc-aws ec2)</fileName>
+  <usages/>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@1189.vf61b_a_5e2f62e">
+      <timestamp>1667047225385</timestamp>
+      <nodeName>Slave1</nodeName>
+      <timestamp0>1666967053204</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>

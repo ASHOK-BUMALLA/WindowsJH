@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<slave>
+  <name>Slave1</name>
+  <description>My local Pc to AWS Ec2 Slave Testing</description>
+  <remoteFS>/home/ubuntu/slave1</remoteFS>
+  <numExecutors>1</numExecutors>
+  <mode>NORMAL</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@2.854.v7fd446b_337c9">
+    <host>3.72.106.118</host>
+    <port>22</port>
+    <credentialsId>testing</credentialsId>
+    <launchTimeoutSeconds>60</launchTimeoutSeconds>
+    <maxNumRetries>10</maxNumRetries>
+    <retryWaitTime>15</retryWaitTime>
+    <sshHostKeyVerificationStrategy class="hudson.plugins.sshslaves.verifiers.NonVerifyingKeyVerificationStrategy"/>
+    <tcpNoDelay>true</tcpNoDelay>
+  </launcher>
+  <label>TestingSlave1</label>
+  <nodeProperties/>
+</slave>
