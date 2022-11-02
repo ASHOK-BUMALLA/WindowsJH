@@ -1,14 +1,14 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <fingerprint>
-  <timestamp>2022-10-28 14:15:47.532 UTC</timestamp>
-  <md5sum>f694ac53ffd99586ecfa4a309272b825</md5sum>
-  <fileName>Credential id=test-jenkins name=ubuntu/****** (agent1 credentials added for demo)</fileName>
+  <timestamp>2022-11-02 12:13:54.290 UTC</timestamp>
+  <md5sum>7cc2245bb0faab513ead9c7e391490f4</md5sum>
+  <fileName>Credential id=slave-amznlinux name=ec2-user (testing nodes migration amzon linux slave)</fileName>
   <usages/>
   <facets>
     <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@1189.vf61b_a_5e2f62e">
-      <timestamp>1667047246876</timestamp>
+      <timestamp>1667400672540</timestamp>
       <nodeName>Slave1</nodeName>
-      <timestamp0>1667047149116</timestamp0>
+      <timestamp0>1667399612918</timestamp0>
     </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
   </facets>
 </fingerprint>

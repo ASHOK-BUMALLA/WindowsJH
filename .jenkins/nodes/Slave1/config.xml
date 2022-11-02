@@ -2,20 +2,34 @@
 <slave>
   <name>Slave1</name>
   <description>My local Pc to AWS Ec2 Slave Testing</description>
-  <remoteFS>/home/ubuntu/slave1</remoteFS>
+  <remoteFS>/home/ec2-user/slave1</remoteFS>
   <numExecutors>1</numExecutors>
   <mode>NORMAL</mode>
   <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
   <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@2.854.v7fd446b_337c9">
-    <host>3.72.106.118</host>
+    <host>3.124.2.214</host>
     <port>22</port>
-    <credentialsId>testing</credentialsId>
+    <credentialsId>slave-amznlinux</credentialsId>
     <launchTimeoutSeconds>60</launchTimeoutSeconds>
     <maxNumRetries>10</maxNumRetries>
     <retryWaitTime>15</retryWaitTime>
-    <sshHostKeyVerificationStrategy class="hudson.plugins.sshslaves.verifiers.NonVerifyingKeyVerificationStrategy"/>
+    <sshHostKeyVerificationStrategy class="hudson.plugins.sshslaves.verifiers.ManuallyTrustedKeyVerificationStrategy">
+      <requireInitialManualTrust>true</requireInitialManualTrust>
+    </sshHostKeyVerificationStrategy>
     <tcpNoDelay>true</tcpNoDelay>
   </launcher>
   <label>TestingSlave1</label>
-  <nodeProperties/>
+  <nodeProperties>
+    <hudson.slaves.EnvironmentVariablesNodeProperty>
+      <envVars serialization="custom">
+        <unserializable-parents/>
+        <tree-map>
+          <default>
+            <comparator class="java.lang.String$CaseInsensitiveComparator"/>
+          </default>
+          <int>0</int>
+        </tree-map>
+      </envVars>
+    </hudson.slaves.EnvironmentVariablesNodeProperty>
+  </nodeProperties>
 </slave>

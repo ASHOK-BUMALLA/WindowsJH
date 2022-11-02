@@ -1,0 +1,11 @@
+Started by user [8mha:////4Krv1OzsJrYgYZhatHyo5ydAgD9BzgpA1+S6XoZtAh6qAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xOKM/GwAS1+pwMAAAAA=[0mAshok
+Running as SYSTEM
+Building remotely on [8mha:////4Kv3UBYbeBGKjk+KORMaRT3QwgfVP7zCi7qloPs5Cm1IAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eCcxLJUQwAO88z1xQAAAA==[0mSlave1 (TestingSlave1) in workspace /home/ubuntu/slave1/workspace/SNP31
+[SNP31] $ /bin/sh -xe /tmp/jenkins3540944041802945988.sh
++ ls -la
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Oct 29 13:20 .
+drwxrwxr-x 3 ubuntu ubuntu 4096 Oct 29 13:20 ..
++ pwd
+/home/ubuntu/slave1/workspace/SNP31
+Finished: SUCCESS
