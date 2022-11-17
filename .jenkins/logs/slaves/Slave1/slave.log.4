@@ -1,37 +1,26 @@
 SSHLauncher{host='3.124.2.214', port=22, credentialsId='slave-amznlinux', jvmOptions='', javaPath='', prefixStartSlaveCmd='', suffixStartSlaveCmd='', launchTimeoutSeconds=60, maxNumRetries=10, retryWaitTime=15, sshHostKeyVerificationStrategy=hudson.plugins.sshslaves.verifiers.ManuallyTrustedKeyVerificationStrategy, tcpNoDelay=true, trackCredentials=true}
-[11/02/22 18:51:28] [SSH] Opening SSH connection to 3.124.2.214:22.
-[11/02/22 18:51:30] [SSH] WARNING: The SSH key for this host is not currently trusted. Connections will be denied until this new key is authorised.
-Key exchange was not finished, connection is closed.
-SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 10 more retries left.
-[11/02/22 18:51:46] [SSH] WARNING: The SSH key for this host is not currently trusted. Connections will be denied until this new key is authorised.
-Key exchange was not finished, connection is closed.
-SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 9 more retries left.
-[11/02/22 18:52:03] [SSH] WARNING: The SSH key for this host is not currently trusted. Connections will be denied until this new key is authorised.
-Key exchange was not finished, connection is closed.
-SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 8 more retries left.
-[11/02/22 18:52:19] [SSH] WARNING: The SSH key for this host is not currently trusted. Connections will be denied until this new key is authorised.
-Key exchange was not finished, connection is closed.
-SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 7 more retries left.
-[11/02/22 18:52:36] [SSH] WARNING: The SSH key for this host is not currently trusted. Connections will be denied until this new key is authorised.
-Key exchange was not finished, connection is closed.
-SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 6 more retries left.
-[11/02/22 18:52:52] [SSH] WARNING: The SSH key for this host is not currently trusted. Connections will be denied until this new key is authorised.
-Key exchange was not finished, connection is closed.
-SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 5 more retries left.
-[11/02/22 18:53:09] [SSH] WARNING: The SSH key for this host is not currently trusted. Connections will be denied until this new key is authorised.
-Key exchange was not finished, connection is closed.
-SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 4 more retries left.
-[11/02/22 18:53:25] [SSH] WARNING: The SSH key for this host is not currently trusted. Connections will be denied until this new key is authorised.
-Key exchange was not finished, connection is closed.
-SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 3 more retries left.
-[11/02/22 18:53:42] [SSH] WARNING: The SSH key for this host is not currently trusted. Connections will be denied until this new key is authorised.
-Key exchange was not finished, connection is closed.
-SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 2 more retries left.
-[11/02/22 18:53:58] [SSH] WARNING: The SSH key for this host is not currently trusted. Connections will be denied until this new key is authorised.
-Key exchange was not finished, connection is closed.
-SSH Connection failed with IOException: "Key exchange was not finished, connection is closed.", retrying in 15 seconds. There are 1 more retries left.
-[11/02/22 18:54:15] [SSH] WARNING: The SSH key for this host is not currently trusted. Connections will be denied until this new key is authorised.
-Key exchange was not finished, connection is closed.
+[11/17/22 21:55:25] [SSH] Opening SSH connection to 3.124.2.214:22.
+Connection timed out: no further information
+SSH Connection failed with IOException: "Connection timed out: no further information", retrying in 15 seconds. There are 10 more retries left.
+Connection timed out: no further information
+SSH Connection failed with IOException: "Connection timed out: no further information", retrying in 15 seconds. There are 9 more retries left.
+Connection timed out: no further information
+SSH Connection failed with IOException: "Connection timed out: no further information", retrying in 15 seconds. There are 8 more retries left.
+Connection timed out: no further information
+SSH Connection failed with IOException: "Connection timed out: no further information", retrying in 15 seconds. There are 7 more retries left.
+Connection timed out: no further information
+SSH Connection failed with IOException: "Connection timed out: no further information", retrying in 15 seconds. There are 6 more retries left.
+Connection timed out: no further information
+SSH Connection failed with IOException: "Connection timed out: no further information", retrying in 15 seconds. There are 5 more retries left.
+Connection timed out: no further information
+SSH Connection failed with IOException: "Connection timed out: no further information", retrying in 15 seconds. There are 4 more retries left.
+Connection timed out: no further information
+SSH Connection failed with IOException: "Connection timed out: no further information", retrying in 15 seconds. There are 3 more retries left.
+Connection timed out: no further information
+SSH Connection failed with IOException: "Connection timed out: no further information", retrying in 15 seconds. There are 2 more retries left.
+Connection timed out: no further information
+SSH Connection failed with IOException: "Connection timed out: no further information", retrying in 15 seconds. There are 1 more retries left.
+Connection timed out: no further information
 ERROR: Connection is not established!
 java.lang.IllegalStateException: Connection is not established!
 	at com.trilead.ssh2.Connection.getRemainingAuthMethods(Connection.java:988)
@@ -56,5 +45,5 @@ java.lang.IllegalStateException: Connection is not established!
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-[11/02/22 18:54:30] Launch failed - cleaning up connection
-[11/02/22 18:54:30] [SSH] Connection closed.
+[11/17/22 22:02:02] Launch failed - cleaning up connection
+[11/17/22 22:02:02] [SSH] Connection closed.
